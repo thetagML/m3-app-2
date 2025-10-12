@@ -1,10 +1,20 @@
 components:
 - components:
-  - layout_properties: {grid_position: 'NOYEHP,VRLTFI'}
+  - event_bindings: {change: drop_down_1_change}
+    layout_properties: {grid_position: 'NOYEHP,VRLTFI'}
     name: drop_down_1
     properties:
       items: [f, g, r]
     type: DropDown
+  - layout_properties: {grid_position: 'NOYEHP,ZRSSEB'}
+    name: label_2
+    properties: {}
+    type: Label
+  - event_bindings: {}
+    layout_properties: {grid_position: 'CWZBQG,LLDDEF'}
+    name: text_area_1
+    properties: {}
+    type: TextArea
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
