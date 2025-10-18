@@ -8558,3 +8558,27 @@ class Form1(Form1Template):
         self.label_2.text = el[ 2 ]
         self.text_area_1.text = el[ 0 ]
 
+    def label_5_show(self, **event_args):
+        """This method is called when the Label is shown on the screen"""
+        pass
+
+    def text_area_1_change(self, **event_args):
+        """This method is called when the text in this text area is edited"""
+        pass
+
+    def text_area_1_lost_focus(self, **event_args):
+        """This method is called when the text area loses focus"""
+        pass
+
+    def text_area_1_focus(self, **event_args):
+        """This method is called when the text area gets focus"""
+        pass
+
+    def link_1_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        pass
+
+    def outlined_card_1_show(self, **event_args):
+        """This method is called when the column panel is shown on the screen"""
+        pass
+
