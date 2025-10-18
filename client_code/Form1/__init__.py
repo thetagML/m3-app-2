@@ -1,5 +1,7 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
+import plotly.graph_objects as go
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -8580,5 +8582,97 @@ class Form1(Form1Template):
 
     def outlined_card_1_show(self, **event_args):
         """This method is called when the column panel is shown on the screen"""
+        pass
+
+    def check_box_1_change(self, **event_args):
+        """This method is called when this checkbox is checked or unchecked"""
+        pass
+
+    def check_box_1_hide(self, **event_args):
+        """This method is called when the CheckBox is removed from the screen"""
+        pass
+
+    def radio_button_1_clicked(self, **event_args):
+        """This method is called when this radio button is selected"""
+        pass
+
+    def radio_button_1_change(self, **event_args):
+        """This method is called when this radio button is selected (but not deselected)"""
+        pass
+
+    def radio_button_2_show(self, **event_args):
+        """This method is called when the radio button is shown on the screen"""
+        pass
+
+    def rich_text_1_show(self, **event_args):
+        """This method is called when the RichText is shown on the screen"""
+        pass
+
+    def text_area_2_lost_focus(self, **event_args):
+        """This method is called when the text area loses focus"""
+        pass
+
+    def text_area_2_focus(self, **event_args):
+        """This method is called when the text area gets focus"""
+        pass
+
+    def date_picker_1_change(self, **event_args):
+        """This method is called when the selected date changes"""
+        pass
+
+    def file_loader_1_change(self, file, **event_args):
+        """This method is called when a new file is loaded into this FileLoader"""
+        pass
+
+    def image_1_mouse_enter(self, x, y, **event_args):
+        """This method is called when the mouse cursor enters this component"""
+        pass
+
+    def image_1_mouse_down(self, x, y, button, keys, **event_args):
+        """This method is called when a mouse button is pressed on this component"""
+        pass
+
+    def plot_1_click(self, points, **event_args):
+        """This method is called when a data point is clicked."""
+        pass
+
+    def plot_1_afterplot(self, **event_args):
+        """This method is called after then plot is redrawn."""
+        pass
+
+    def map_1_bounds_changed(self, **event_args):
+        """This method is called when the viewport bounds have changed."""
+        pass
+
+    def map_1_heading_changed(self, **event_args):
+        """This method is called when the map heading property changes."""
+        pass
+
+    def map_1_projection_changed(self, **event_args):
+        """This method is called when the projection has changed."""
+        pass
+
+    def canvas_1_reset(self, **event_args):
+        """This method is called when the canvas is reset and cleared, such as when the window resizes, or the canvas is added to a form."""
+        pass
+
+    def youtube_video_1_state_change(self, state, **event_args):
+        """This method is called when the video changes state (eg PAUSED to PLAYING)"""
+        pass
+
+    def timer_1_tick(self, **event_args):
+        """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
+        pass
+
+    def label_6_hide(self, **event_args):
+        """This method is called when the Label is removed from the screen"""
+        pass
+
+    def outlined_button_1_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        pass
+
+    def outlined_1_lost_focus(self, **event_args):
+        """This method is called when the TextBox loses focus"""
         pass
 

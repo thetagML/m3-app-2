@@ -3,17 +3,45 @@ db_schema:
   files:
     client: none
     columns:
-    - admin_ui: {order: 0, width: 200}
+    - admin_ui: {order: 0, width: 121}
       name: path
       type: string
-    - admin_ui: {order: 1, width: 200}
+    - admin_ui: {order: 1, width: 121}
       name: file
       type: media
-    - admin_ui: {order: 2, width: 200}
+    - admin_ui: {order: 2, width: 126}
       name: file_version
       type: string
+    - admin_ui: {order: 3, width: 117}
+      name: bool
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: dtt
+      type: datetime
+    - admin_ui: {order: 5, width: 141}
+      name: obj
+      type: simpleObject
+    - admin_ui: {order: 6, width: 119}
+      name: row
+      target: tbl2
+      type: link_single
+    - admin_ui: {order: 7, width: 200}
+      name: rows
+      target: tbl2
+      type: link_multiple
     server: full
     title: Files
+  tbl2:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: num
+      type: number
+    server: full
+    title: tbl2
 dependencies: []
 name: M3 App 2
 package_name: M3_App_2
