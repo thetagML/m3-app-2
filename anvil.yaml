@@ -59,3 +59,4 @@ services:
   server_config: {file_table: files}
   source: /runtime/services/anvil/files.yml
 startup_form: Form1
+uplink_visible: true
