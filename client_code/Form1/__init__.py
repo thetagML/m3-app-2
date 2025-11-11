@@ -8543,6 +8543,7 @@ a = [
 class Form1(Form1Template):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
+        self.item[ "xxtag" ] = "a"
         self.init_components(**properties)
 
         # Any code you write here will run before the form opens.
@@ -8662,7 +8663,7 @@ class Form1(Form1Template):
 
     def timer_1_tick(self, **event_args):
         """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
-        pass
+        self.call_js("stop")
 
     def label_6_hide(self, **event_args):
         """This method is called when the Label is removed from the screen"""

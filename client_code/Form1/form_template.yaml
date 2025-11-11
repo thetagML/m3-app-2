@@ -43,7 +43,7 @@ components:
       type: ColumnPanel
     - components:
       - data_bindings:
-        - {code: xxtag, property: tag, writeback: false}
+        - {code: 'self.item[''xxtag'']', property: tag, writeback: false}
         event_bindings: {show: label_5_show}
         layout_properties: {expand: true, width: null}
         name: label_5
@@ -154,7 +154,7 @@ components:
     - event_bindings: {tick: timer_1_tick}
       layout_properties: {width: 200, x: 471.1354522705078, y: 300}
       name: timer_1
-      properties: {interval: 49.5}
+      properties: {interval: 2}
       type: Timer
     - event_bindings: {hide: label_6_hide}
       layout_properties: {width: 200, x: 297.510431926698, y: 14}
